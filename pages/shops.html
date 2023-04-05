@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>POLO SHOP</title>
+  </head>
+  <body>
+    <div class="popup-window popup-window--hidden" id="register-window">
+      <div class="popup-window__popup popup">
+        <button class="popup__close-btn"></button>
+        <form class="popup-window__form popup__form popup-form" id="register-form">
+          <fieldset>
+            <label>
+              Введите ваше имя
+              <input required type="text" name="login" placeholder="Введите ваше имя" class="popup-form__input" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              Введите пароль
+              <input required type="password" placeholder="Введите пароль" name="pass" class="popup-form__input" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              Повторите пароль
+              <input required type="password" placeholder="Повторите пароль" name="repeat-pass" class="popup-form__input" id="" />
+            </label>
+          </fieldset>
+          <button class="popup-form__submit-btn">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+    <div class="popup-window popup-window--hidden" id="login-window">
+      <div class="popup-window__popup popup">
+        <button class="popup__close-btn"></button>
+        <form class="popup-window__form popup__form popup-form" id="login-form">
+          <fieldset>
+            <label>
+              Введите ваше имя
+              <input required type="text" name="login" placeholder="Введите ваше имя" class="popup-form__input" />
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>
+              Введите пароль
+              <input required type="password" name="pass" placeholder="Пароль" class="popup-form__input" />
+            </label>
+          </fieldset>
+          <button class="popup-form__submit-btn" type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div class="adv">
+      <div class="wrapper">
+        Закажи кроссы сегодня и получи скидон 20%
+        <span class="icon">
+          <?xml version="1.0" ?><svg id="Icons" style="enable-background: new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M24,6c-1.7,0-3,1.3-3,3v2.2c-0.3-0.1-0.6-0.2-1-0.2c-0.8,0-1.5,0.3-2,0.8c-0.5-0.5-1.2-0.8-2-0.8c-0.4,0-0.7,0.1-1,0.2V7  c0-1.7-1.3-3-3-3S9,5.3,9,7v9v1.9C8.5,17.4,7.8,17,7,17c-0.9,0-1.7,0.3-2.3,0.9c-1.1,1.1-1.2,3-0.1,4.2l3.2,3.6  c1.8,2.1,4.4,3.3,7.2,3.3h3.7c4.6,0,8.4-3.8,8.4-8.4V20v-4V9C27,7.3,25.7,6,24,6z M25,16v4v0.6c0,3.5-2.9,6.4-6.4,6.4h-3.7  c-2.2,0-4.2-0.9-5.7-2.6L6,20.8c-0.4-0.4-0.4-1.1,0.1-1.5C6.3,19.1,6.6,19,6.9,19c0.3,0,0.6,0.2,0.8,0.4l1.5,1.8  c0.3,0.3,0.7,0.4,1.1,0.3c0.4-0.1,0.7-0.5,0.7-0.9V18v-2V7c0-0.6,0.4-1,1-1s1,0.4,1,1v7v1c0,0.6,0.4,1,1,1s1-0.4,1-1v-1  c0-0.6,0.4-1,1-1s1,0.4,1,1v1c0,0.6,0.4,1,1,1s1-0.4,1-1v-1c0-0.6,0.4-1,1-1s1,0.4,1,1v1c0,0.6,0.4,1,1,1s1-0.4,1-1v-1V9  c0-0.6,0.4-1,1-1s1,0.4,1,1V16z" />
+          </svg>
+        </span>
+        <button class="adv__close-btn">
+          <div class="close-icon"></div>
+        </button>
+      </div>
+    </div>
+    <header class="header">
+      <div class="top-header">
+        <div class="wrapper">
+          <div class="location">
+            <span class="location__name">Москва</span>
+            <div class="location__list location-list">
+              <button class="location__select-btn location-list__select-btn">Москва</button>
+              <button class="location__select-btn location-list__select-btn">Санкт-Петербург</button>
+              <button class="location__select-btn location-list__select-btn">Казань</button>
+            </div>
+          </div>
+          <nav class="nav nav--top-header">
+            <a href="#" class="nav__link nav--top__link">Наши магазины</a>
+            <a href="#" class="nav__link nav--top__link">Доставка и оплата</a>
+            <a href="#" class="nav__link nav--top__link">Где мой заказ?</a>
+            <a href="#" class="nav__link nav--top__link">Обмен и возврат</a>
+            <a href="#" class="nav__link nav--top__link">Акции</a>
+          </nav>
+          <a href="tel:+7800888888" class="top-header__tel-link tel-link">8 (800) 123-45-67</a>
+        </div>
+      </div>
+      <div class="center-header">
+        <div class="center-header__model-list model-list">
+          <a href="#" class="model-list__model">Air Jordan Retro 10</a>
+          <a href="#" class="model-list__model">Nike Air Max</a>
+          <a href="#" class="model-list__model">Nike Dart</a>
+          <a href="#" class="model-list__model">Nike Dunk Low Premium</a>
+          <a href="#" class="model-list__model">Nike Dual Fusion</a>
+          <a href="#" class="model-list__model">Nike Jordan</a>
+          <a href="#" class="model-list__model">Nike Lebron</a>
+          <a href="#" class="model-list__model">Nike Lunar</a>
+        </div>
+        <a href="/" class="logo-link">POLO SHOP</a>
+        <div class="center-header__model-list model-list">
+          <a href="#" class="model-list__model">Nike Lunarglide</a>
+          <a href="#" class="model-list__model">Nike T-Run</a>
+          <a href="#" class="model-list__model">Nike Air Pegasus</a>
+          <a href="#" class="model-list__model">Nike Free Run</a>
+          <a href="#" class="model-list__model">Nike Walk</a>
+          <a href="#" class="model-list__model">Nike Hyperdunk</a>
+          <a href="#" class="model-list__model">Nike Impel Leather</a>
+          <a href="#" class="model-list__model">Nike Lunerswift</a>
+          <a href="#" class="model-list__model">Nike Shox</a>
+          <a href="#" class="model-list__model">Nike View</a>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="wrapper">
+          <form class="bottom-header__search-form search-form">
+            <input type="text" placeholder="Поиск" class="search-form__input" />
+          </form>
+          <div class="bottom-header__cabinet cabinet">
+            <a href="#" class="cabinet__link sign-link">Войти</a>
+            <a href="#" class="cabinet__link register-link">Зарегистрироваться</a>
+          </div>
+          <div class="profile profile--hidden">
+            <div class="profile__avatar"></div>
+            <span class="profile__name">Станислав</span>
+            <button type="button" class="profile__exit-btn">Выйти?</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="shops">
+        <div class="shops__wrapper wrapper">
+          <h2 class="shops__heading subheading">Наши магазины</h2>
+          <div class="shops__shops-list shops-list">
+            <div class="shops-list__item shop-item">
+              <h3 class="shop-item__heading">ТЦ "Небесный" на Тверской</h3>
+              <a href="#" class="shop-item__btn">Перейти</a>
+            </div>
+            <div class="shops-list__item shop-item">
+              <h3 class="shop-item__heading">ТЦ "Юпитер"</h3>
+              <a href="#" class="shop-item__btn">Перейти</a>
+            </div>
+            <div class="shops-list__item shop-item">
+              <h3 class="shop-item__heading">ТЦ "Булава" на Нарымской</h3>
+              <a href="#" class="shop-item__btn">Перейти</a>
+            </div>
+          </div>
+        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A46fa5fe23d4edb96ccefc115ffeaf2f9b05c11f9daf0485e25005cd1c3d85916&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper wrapper">
+        <div class="footer__col col">
+          <h4 class="footer__col-heading col__heading">О нашей компании</h4>
+          <nav class="footer__nav footer-nav">
+            <a href="./vacancy.html" class="footer__nav-link footer-nav__link">Вакансии</a>
+            <a href="./pages/shops.html" class="footer__nav-link footer-nav__link">Наши магазины</a>
+            <a href="#" class="footer__nav-link footer-nav__link">О нас</a>
+            <a href="#" class="footer__nav-link footer-nav__link">Обратная связь</a>
+          </nav>
+        </div>
+        <div class="footer__col footer__col--last col">
+          <h4 class="footer__col-heading col__heading">Наши контакты</h4>
+          <div class="footer__socials socials">
+            <a href="#" class="footer__socials-link socials__link">
+              <img src="./assets/icons/vk-icon.svg" alt="" />
+            </a>
+            <a href="#" class="footer__socials-link socials__link">
+              <img src="./assets/icons/tg-icon.svg" alt="" />
+            </a>
+            <a href="#" class="footer__socials-link socials__link">
+              <img src="./assets/icons/inst-icon.svg" alt="" />
+            </a>
+          </div>
+          <form class="footer__form email-form">
+            <input type="text" class="email-form__input" placeholder="Ваш e-mail" />
+            <button type="submit" class="email-form__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="../scripts/popup.js"></script>
+    <script src="../scripts/register.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+  </body>
+</html>
